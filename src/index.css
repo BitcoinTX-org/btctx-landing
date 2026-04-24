@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+@theme {
+  /* Surfaces */
+  --color-bg: #121212;
+  --color-bg-elevated: #1a1a1a;
+  --color-panel: #1c1c1c;
+  --color-surface: #242424;
+  --color-surface-hover: #2a2a2a;
+  --color-surface-active: #3a3a3a;
+  --color-section-panel: #2c2c2e;
+
+  /* Text */
+  --color-text: #ffffff;
+  --color-text-secondary: #cfcfcf;
+  --color-text-muted: #888888;
+
+  /* Brand */
+  --color-accent-gold: #e5b45a;
+  --color-accent-gold-hover: #edc06a;
+  --color-accent-orange: #f7931a;
+  --color-accent-orange-hover: #e5830f;
+
+  /* Semantic */
+  --color-success: #32d74b;
+  --color-error: #ff453a;
+  --color-warning: #ff9f0a;
+
+  /* Hairline borders — subtle luminance separators, not visible strokes */
+  --color-hairline: rgba(255, 255, 255, 0.08);
+  --color-hairline-strong: rgba(255, 255, 255, 0.10);
+
+  /* Type families */
+  --font-display: "Outfit", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
